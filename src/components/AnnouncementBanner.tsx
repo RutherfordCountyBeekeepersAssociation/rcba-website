@@ -15,7 +15,7 @@ export const AnnouncementBanner = () => {
     >
       <div className="container mx-auto text-center">
         <p className="text-sm md:text-base font-medium">
-          🐝 2026 Bee School Registration Now Open! Click here to sign up →
+          🐝 2026 Bee School is now in session! Click here for details →
         </p>
       </div>
       <button

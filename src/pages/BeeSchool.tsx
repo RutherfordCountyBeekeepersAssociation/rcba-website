@@ -28,15 +28,15 @@ const BeeSchool = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Join us for our comprehensive beekeeping school and learn everything you need to become a certified beekeeper.
+              Our comprehensive beekeeping school is currently in session!
             </p>
 
-            <a href="/2026_Bee_School_Registration_Form.docx" download>
-              <Button size="lg" className="gap-2 text-lg px-8 py-6">
-                <Download className="h-6 w-6" />
-                Download Registration Form
-              </Button>
-            </a>
+            <Alert className="max-w-md mx-auto bg-destructive/10 border-destructive/30">
+              <AlertCircle className="h-4 w-4 text-destructive" />
+              <AlertDescription className="text-destructive font-semibold">
+                Registration is now closed.
+              </AlertDescription>
+            </Alert>
           </div>
         </div>
       </section>
