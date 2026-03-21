@@ -45,21 +45,6 @@ export const Contact = () => {
               </a>
             </div>
 
-              <div className="border-t border-border pt-8">
-                <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-secondary/5 rounded-lg p-6 text-center">
-                  <h3 className="text-xl font-semibold mb-3 text-foreground">
-                    Ready to Start Your Beekeeping Journey?
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    Sign up for the Spring 2026 Beekeeping School and join our welcoming community.
-                  </p>
-                  <Link to="/bee-school">
-                    <Button size="lg" className="shadow-[var(--shadow-warm)] hover:scale-105 transition-all">
-                      Sign Up for Beekeeping School
-                    </Button>
-                  </Link>
-                </div>
-              </div>
             </div>
           </Card>
         </div>
