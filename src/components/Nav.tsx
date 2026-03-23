@@ -11,6 +11,7 @@ export const Nav = () => {
     { label: "Membership", href: "#membership" },
     { label: "Resources", href: "#resources" },
     { label: "Contact", href: "#contact" },
+    { label: "Swarm Calls", href: "/swarm-calls" },
   ];
 
   const scrollToSection = (href: string) => {
