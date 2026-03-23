@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 // TODO: Replace with your published Google Sheet CSV URL
-const SHEET_CSV_URL = "";
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTDv3wFDwseFj6mgU4j7zCu6IO8vpV1Cs_qanPII5UJAPPoYZv7rHEOQp4UEuOkNstglHCy0XLPPkxl/pubhtml";
 
 function parseCSV(text: string): string[][] {
   const rows: string[][] = [];
