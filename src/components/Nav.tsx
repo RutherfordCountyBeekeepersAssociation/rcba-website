@@ -69,7 +69,7 @@ export const Nav = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.href}
-                  onClick={() => scrollToSection(link.href)}
+                  onClick={() => handleNavClick(link.href)}
                   className="text-left px-2 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 >
                   {link.label}
