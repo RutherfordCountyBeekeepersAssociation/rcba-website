@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navLinks = [
     { label: "About", href: "#about" },
@@ -11,11 +13,16 @@ export const Nav = () => {
     { label: "Membership", href: "#membership" },
     { label: "Resources", href: "#resources" },
     { label: "Contact", href: "#contact" },
+    { label: "Swarm Calls", href: "/swarm-calls" },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (href: string) => {
+    if (href.startsWith("/")) {
+      navigate(href);
+    } else {
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false);
   };
 
@@ -35,7 +42,7 @@ export const Nav = () => {
             {navLinks.map((link) => (
               <button
                 key={link.href}
-                onClick={() => scrollToSection(link.href)}
+                onClick={() => handleNavClick(link.href)}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.label}
@@ -62,7 +69,7 @@ export const Nav = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.href}
-                  onClick={() => scrollToSection(link.href)}
+                  onClick={() => handleNavClick(link.href)}
                   className="text-left px-2 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 >
                   {link.label}
