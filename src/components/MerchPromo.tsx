@@ -13,9 +13,9 @@ export const MerchPromo = () => {
             🧢 RCBA Merchandise — Limited Time!
           </h2>
           <p className="text-muted-foreground text-lg">
-            Shirts, hats, and more with our club logo — offered at cost. 
+            Shirts, hats, and more with our club logo. 
             Orders close <strong className="text-foreground">March 29th, 2026</strong>. 
-            Items will be made after the deadline and available for pick up all at one time.
+            Items will be made after the deadline and available for pick up all at one time (TBA).
           </p>
           <Button size="lg" asChild>
             <a
