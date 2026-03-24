@@ -10,7 +10,7 @@ export const MerchPromo = () => {
             <ShoppingBag className="w-10 h-10 text-primary" />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            🧢 RCBA Merchandise — Limited Time!
+            🧢 RCBA Merchandise available for a limited time!
           </h2>
           <p className="text-muted-foreground text-lg">
             Shirts, hats, and more with our club logo. 
@@ -27,9 +27,6 @@ export const MerchPromo = () => {
               Shop Merch Now
             </a>
           </Button>
-          <p className="text-sm text-muted-foreground">
-            Link expires March 29th — don't miss out!
-          </p>
         </div>
       </div>
     </section>
