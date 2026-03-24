@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { MerchPromo } from "@/components/MerchPromo";
 import { About } from "@/components/About";
 import { Meetings } from "@/components/Meetings";
 import { Membership } from "@/components/Membership";
