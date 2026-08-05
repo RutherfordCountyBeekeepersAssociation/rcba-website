@@ -3,9 +3,11 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const joinUrl = import.meta.env.VITE_SQUARE_NEW_MEMBER_URL;
+
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useState(false);
 
   const navLinks = [
     { label: "About", href: "#about" },
