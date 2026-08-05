@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import beeFlowerImage from "@/assets/bee-flower.jpg";
+import {
+  SQUARE_NEW_MEMBER_URL,
+  SQUARE_RENEWAL_URL,
+  SQUARE_DONATION_URL,
+} from "@/lib/payment-links";
 
 const benefits = [
   "Participation in community outreach events",
@@ -44,9 +49,24 @@ export const Membership = () => {
                   ))}
                 </div>
 
-                <Button className="w-full shadow-[var(--shadow-warm)] hover:scale-105 transition-all" disabled>
-                  Join Today
+                <Button asChild className="w-full shadow-[var(--shadow-warm)] hover:scale-105 transition-all">
+                  <a href={SQUARE_NEW_MEMBER_URL} target="_blank" rel="noopener noreferrer">
+                    Join Today
+                  </a>
                 </Button>
+
+                <div className="grid grid-cols-2 gap-4 pt-2">
+                  <Button asChild variant="outline" className="w-full">
+                    <a href={SQUARE_RENEWAL_URL} target="_blank" rel="noopener noreferrer">
+                      Renew
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <a href={SQUARE_DONATION_URL} target="_blank" rel="noopener noreferrer">
+                      Donate
+                    </a>
+                  </Button>
+                </div>
               </div>
             </Card>
           </div>
