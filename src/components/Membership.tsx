@@ -5,7 +5,6 @@ import beeFlowerImage from "@/assets/bee-flower.jpg";
 import {
   SQUARE_NEW_MEMBER_URL,
   SQUARE_RENEWAL_URL,
-  SQUARE_DONATION_URL,
 } from "@/lib/payment-links";
 
 const benefits = [
@@ -55,18 +54,11 @@ export const Membership = () => {
                   </a>
                 </Button>
 
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <Button asChild variant="outline" className="w-full">
-                    <a href={SQUARE_RENEWAL_URL} target="_blank" rel="noopener noreferrer">
-                      Renew
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <a href={SQUARE_DONATION_URL} target="_blank" rel="noopener noreferrer">
-                      Donate
-                    </a>
-                  </Button>
-                </div>
+                <Button asChild variant="outline" className="w-full">
+                  <a href={SQUARE_RENEWAL_URL} target="_blank" rel="noopener noreferrer">
+                    Renew Membership
+                  </a>
+                </Button>
               </div>
             </Card>
           </div>
