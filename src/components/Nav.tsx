@@ -2,12 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-const joinUrl = import.meta.env.VITE_SQUARE_NEW_MEMBER_URL;
+import { SQUARE_NEW_MEMBER_URL } from "@/lib/payment-links";
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useState(false);
+  const navigate = useNavigate();
 
   const navLinks = [
     { label: "About", href: "#about" },
@@ -50,8 +49,10 @@ export const Nav = () => {
                 {link.label}
               </button>
             ))}
-            <Button size="sm" className="ml-2" disabled>
-              Join Now
+            <Button size="sm" className="ml-2" asChild>
+              <a href={SQUARE_NEW_MEMBER_URL} target="_blank" rel="noopener noreferrer">
+                Join Now
+              </a>
             </Button>
           </div>
 
@@ -77,8 +78,10 @@ export const Nav = () => {
                   {link.label}
                 </button>
               ))}
-              <Button size="sm" className="w-full mt-2" disabled>
-                Join Now
+              <Button size="sm" className="w-full mt-2" asChild>
+                <a href={SQUARE_NEW_MEMBER_URL} target="_blank" rel="noopener noreferrer">
+                  Join Now
+                </a>
               </Button>
             </div>
           </div>
