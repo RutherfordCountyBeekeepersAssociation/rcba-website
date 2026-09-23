@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import BeeSchool from "./pages/BeeSchool";
 import SwarmCalls from "./pages/SwarmCalls";
+import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
