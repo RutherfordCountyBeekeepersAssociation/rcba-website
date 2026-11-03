@@ -9,6 +9,7 @@ import BeeSchool from "./pages/BeeSchool";
 import SwarmCalls from "./pages/SwarmCalls";
 import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
+import GoatCounterTracker from "./components/GoatCounterTracker";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GoatCounterTracker />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
